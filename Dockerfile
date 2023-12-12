@@ -4,6 +4,8 @@ FROM osgeo/gdal:alpine-normal-3.6.3
 # Install Python
 RUN apk add --no-cache python3 py3-pip
 
+# add GCP Credentials for local development only
+# ENV GOOGLE_APPLICATION_CREDENTIALS=/credentials/service_account_credentials.json
 
 # Set the working directory
 WORKDIR /app

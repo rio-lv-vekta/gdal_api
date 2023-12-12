@@ -1,5 +1,6 @@
 from flask import Flask
-from functions import generate_tiles , clear_output_folder
+from a_create_pyramid import create_pyramid
+# from functions import generate_tiles , clear_output_folder
 
 app = Flask(__name__)
 
